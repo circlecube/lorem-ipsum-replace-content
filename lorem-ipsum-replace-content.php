@@ -113,25 +113,20 @@ class LoremIpsumReplaceContent {
 			else{
 				//opening html entity because no close found
 				if ($html3 === false ){
+					//check if empty 'word'
 					if (strlen($words[$i]) > $html2 + 1) {
 						$htmle = substr( $words[$i], 0, $html2+1);
 						$words[$i] = $htmle . $source[rand(0, $source_length)];
-						// $words[$i] = $htmle . 'html1';
-						//array_push($html_words, $words[$i].'(html1,'.$html1.','.$html2.','.$html3 .')');
 					}
 				}
 				//closing html entity
 				else{
 					$htmle = substr( $words[$i], $html3, strlen($words[$i]));
 					$words[$i] = $source[rand(0, $source_length)] . $htmle;
-					// $words[$i] = 'html3' . $htmle;
-					//array_push($html_words, '(html3,'.$html1.','.$html2.','.$html3 .')'.$words[$i]);
 				}
 			}
 		}
 		$content = implode(' ', $words);
-		
-		//$content .= '<textarea>' . implode('</textarea><textarea>', $html_words) . '</textarea>';
 
 		return $content; 
 	}
