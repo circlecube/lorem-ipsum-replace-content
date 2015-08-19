@@ -3,7 +3,7 @@
 Plugin Name: Lorem Ipsum Replace Content
 Plugin URI: http://circlecube.com
 Description: Replace your content with lorem ipsum, word for word.
-Version: 0.2
+Version: 0.3
 Author: Evan Mullins
 Author Email: evan@circlecube.com
 License: GPLv2 or later
