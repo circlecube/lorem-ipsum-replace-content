@@ -2,9 +2,9 @@
 Contributors: circlecube
 Donate link: https://circlecube.com/
 Tags: lorem ipsum
-Requires at least: 3.0.1
-Tested up to: 4.0
-Stable tag: 0.2
+Requires at least: 3
+Tested up to: 4.3
+Stable tag: 0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,7 +38,10 @@ Answer to foo bar dilemma.
 
 == Changelog ==
 
+= 0.3 =
+Update to avoid replacing shortcodes.
+
 = 0.2 =
-Initial release
+Initial release.
 
 == Upgrade Notice ==
